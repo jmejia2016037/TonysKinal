@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="479.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jeffreymejia.controller.DatosPersonalesController">
+   <children>
+      <ImageView fitHeight="406.0" fitWidth="600.0" layoutX="-2.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/fondo.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="-3.0" layoutY="-3.0" prefHeight="60.0" prefWidth="479.0" text="Datos Personales " textFill="WHITE">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="30.0" layoutY="86.0" prefHeight="25.0" prefWidth="201.0" text="JEFFREY DANIEL MEJIA SOLIS" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="30.0" layoutY="134.0" prefHeight="25.0" prefWidth="123.0" text="IN5AM - PE5AM" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="30.0" layoutY="179.0" prefHeight="21.0" prefWidth="106.0" text="2016037" textFill="WHITE" />
+      <ImageView fitHeight="195.0" fitWidth="253.0" layoutX="268.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/FOTO.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="110.0" fitWidth="135.0" layoutX="43.0" layoutY="244.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/LogoKinal.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="409.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jeffreymejia.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="409.0" layoutX="5.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Kinal.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutY="-2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Modulo">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaEmpresa" text="Empresa" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoEmpleado" text="Tipo Empleado" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProducto" text="Productos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoPlato" text="Tipo Plato" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Uniones ">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaHasPlato" text="Servicio Has Platos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServiciosHasEmpleados" text="Servicio Has Empleados" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProductoHasPlato" text="Producto Has Platos" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="?">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaProgramador" text="Programador" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

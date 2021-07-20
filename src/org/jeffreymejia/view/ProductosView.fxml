@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="599.0" style="-fx-background-color: #3E5F8A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jeffreymejia.controller.ProductoController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="65.0" style="-fx-background-color: yellow;">
+         <children>
+            <Button fx:id="btnNuevo" layoutX="2.0" layoutY="37.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="31.0" prefWidth="57.0" style="-fx-background-color: #3E5F8A;" text="Nuevo " textFill="#fcfcfc">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEliminar" layoutX="2.0" layoutY="79.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="31.0" prefWidth="57.0" style="-fx-background-color: #3E5F8A;" text="Eliminar" textFill="#fcfcfc">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEditar" layoutX="2.0" layoutY="121.0" mnemonicParsing="false" onAction="#editar" prefHeight="31.0" prefWidth="57.0" style="-fx-background-color: #3E5F8A;" text="Editar" textFill="#fcfcfc">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnReportar" layoutX="2.0" layoutY="159.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="57.0" style="-fx-background-color: #3E5F8A;" text="Reporte" textFill="#fcfcfc">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="65.0" layoutY="-1.0" prefHeight="38.0" prefWidth="536.0" text="Productos" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="99.0" layoutY="49.0" text="Codigo Productos " textFill="WHITE" />
+      <Label layoutX="90.0" layoutY="88.0" prefHeight="21.0" prefWidth="142.0" text="Nombre Productos" textFill="WHITE" />
+      <Label layoutX="99.0" layoutY="126.0" prefHeight="21.0" prefWidth="65.0" text="Cantidad" textFill="WHITE" />
+      <TextField fx:id="txtCodigoProducto" layoutX="231.0" layoutY="44.0" />
+      <TextField fx:id="txtNombreProducto" layoutX="231.0" layoutY="83.0" />
+      <TextField fx:id="txtCantidad" layoutX="231.0" layoutY="121.0" />
+      <TableView fx:id="tblProductos" layoutX="86.0" layoutY="174.0" onMouseClicked="#seleccionarElemento" prefHeight="200.0" prefWidth="495.0">
+        <columns>
+          <TableColumn fx:id="colCodigoProducto" prefWidth="161.0" text="Codigo Productos" />
+          <TableColumn fx:id="colNombreProducto" prefWidth="172.0" text="Nombre " />
+            <TableColumn fx:id="colCantidad" prefWidth="161.0" text="Cantidad Productos" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="67.0" fitWidth="65.0" layoutX="496.0" layoutY="27.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/LogoKinal.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

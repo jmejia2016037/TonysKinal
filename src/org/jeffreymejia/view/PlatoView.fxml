@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="868.0" style="-fx-background-color: #3E5F8A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jeffreymejia.controller.PlatoController">
+   <children>
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="-1.0" prefHeight="53.0" prefWidth="868.0" text="Platos " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="108.0" prefHeight="21.0" prefWidth="93.0" text="Código Plato" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="24.0" layoutY="159.0" prefHeight="21.0" prefWidth="93.0" text="Cantidad" textFill="WHITE" />
+      <Label layoutX="26.0" layoutY="217.0" text="Nombre Plato" textFill="WHITE" />
+      <Label layoutX="369.0" layoutY="108.0" text="Descripcion Plato" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="372.0" layoutY="159.0" prefHeight="21.0" prefWidth="115.0" text="Precio" textFill="WHITE" />
+      <Label layoutX="366.0" layoutY="217.0" text="Código Tipo Plato" textFill="WHITE" />
+      <TextField fx:id="txtcodigoPlatos" layoutX="142.0" layoutY="103.0" prefHeight="31.0" prefWidth="199.0" />
+      <TextField fx:id="txtcantidad" layoutX="142.0" layoutY="154.0" prefHeight="31.0" prefWidth="199.0" />
+      <TextField fx:id="txtnombrePlato" layoutX="142.0" layoutY="212.0" prefHeight="21.0" prefWidth="199.0" />
+      <TextField fx:id="txtprecioPlato" layoutX="498.0" layoutY="154.0" prefHeight="31.0" prefWidth="210.0" />
+      <TextField fx:id="txtdescripcionPlato" layoutX="498.0" layoutY="103.0" prefHeight="21.0" prefWidth="210.0" />
+      <TableView fx:id="tblPlatos" layoutX="17.0" layoutY="293.0" onKeyPressed="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="250.0" prefWidth="712.0" style="-: #7FFF00;">
+        <columns>
+          <TableColumn fx:id="colcodigoPlatos" minWidth="9.0" prefWidth="118.0" text="Código Plato" />
+          <TableColumn fx:id="colcantidad" minWidth="8.0" prefWidth="83.0" text="Cantidad" />
+            <TableColumn fx:id="colnombrePlato" minWidth="8.0" prefWidth="128.0" text="Nombre Plato" />
+            <TableColumn fx:id="coldescripcionPlato" minWidth="8.0" prefWidth="153.0" text="Descripcion Plato" />
+            <TableColumn fx:id="colprecioPlato" minWidth="8.0" prefWidth="60.0" text="Precio" />
+            <TableColumn fx:id="colCodigoTipoPlatos" minWidth="8.0" prefWidth="137.0" text="Codigo Tipo Pato" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cmbCodigoTipoPlato" layoutX="494.0" layoutY="212.0" prefHeight="31.0" prefWidth="210.0" />
+      <AnchorPane layoutX="751.0" prefHeight="569.0" prefWidth="115.0" style="-fx-background-color: yellow;">
+         <children>
+            <Button fx:id="btnNuevo1" layoutX="18.0" layoutY="34.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="38.0" prefWidth="80.0" style="-fx-background-color: #3E5F8A;" text="Nuevo " textFill="#fcfcfc">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEliminar1" layoutX="18.0" layoutY="84.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: #3E5F8A;" text="Eliminar" textFill="#fcfcfc">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEditar" layoutX="18.0" layoutY="128.0" mnemonicParsing="false" onAction="#editar" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: #3E5F8A;" text="Editar" textFill="#fcfcfc">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnReportar" layoutX="18.0" layoutY="174.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: #3E5F8A;" text="Reporte" textFill="#fcfcfc">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="67.0" fitWidth="65.0" layoutX="25.0" layoutY="459.0" onMouseClicked="#menuprincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/LogoKinal.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="65.0" layoutX="25.0" layoutY="378.0" onMouseClicked="#ventanaTipoPlato" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/platosRege.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

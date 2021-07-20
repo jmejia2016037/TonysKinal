@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="754.0" style="-fx-background-color: #3E5F8A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jeffreymejia.controller.ProductosHasPlatosController">
+   <children>
+      <TableView fx:id="tblProductos_has_platos" layoutX="28.0" layoutY="208.0" onKeyPressed="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="233.0" prefWidth="704.0">
+        <columns>
+          <TableColumn fx:id="colProductosCodigoProducto" prefWidth="353.0" text="Código Productos" />
+          <TableColumn fx:id="colPlatosCodigoPlato" minWidth="0.0" prefWidth="349.0" text="Código Platos" />
+        </columns>
+      </TableView>
+      <Label layoutX="54.0" layoutY="92.0" text="Código Productos" textFill="WHITE" />
+      <Label layoutX="67.0" layoutY="144.0" text="Código Platos" textFill="WHITE" />
+      <Label alignment="CENTER" prefHeight="57.0" prefWidth="754.0" text="Productos has Platos " textFill="#fcfcfc">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbProductoCodigoProducto" layoutX="246.0" layoutY="87.0" prefHeight="31.0" prefWidth="239.0" />
+      <ComboBox fx:id="cmbPlatoCodigoPlato" layoutX="246.0" layoutY="139.0" prefHeight="31.0" prefWidth="239.0" />
+      <Label layoutY="464.0" prefHeight="57.0" prefWidth="754.0" style="-fx-background-color: yellow;" />
+      <ImageView fitHeight="105.0" fitWidth="104.0" layoutX="566.0" layoutY="50.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/LogoKinal.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

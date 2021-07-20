@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporteEmpresas" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9c4d20d4-17c5-4dbb-9fca-52e3f2c499fa">
+	<property name="ireport.zoom" value="1.6105100000000008"/>
+	<property name="ireport.x" value="10"/>
+	<property name="ireport.y" value="96"/>
+	<queryString>
+		<![CDATA[select * from Empresas]]>
+	</queryString>
+	<field name="codigoEmpresas" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement stretchType="RelativeToBandHeight" x="120" y="3" width="318" height="76" uuid="a48c23d0-b63d-4dbc-85b1-cf28951c1fae"/>
+				<imageExpression><![CDATA["C:\\Users\\Jeffr\\Documents\\NetBeansProjects\\TonysKinal2016037\\src\\org\\jeffreymejia\\image\\imagendeTItuloEmpresas.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="471" y="3" width="101" height="76" uuid="d0032503-ffa6-4228-98f7-40757e16defb"/>
+				<imageExpression><![CDATA["C:\\Users\\Jeffr\\Documents\\NetBeansProjects\\TonysKinal2016037\\src\\org\\jeffreymejia\\image\\LogoKinal.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="1" y="0" width="98" height="79" uuid="774fb59d-c57e-417a-9d2c-efc652ccca1e"/>
+				<imageExpression><![CDATA["C:\\Users\\Jeffr\\Documents\\NetBeansProjects\\TonysKinal2016037\\src\\org\\jeffreymejia\\image\\LogoKinal.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="160" y="13" width="241" height="40" uuid="9a8e3f40-7ba3-43d1-b360-475d260826d5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[TONY´S KINAL]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="44" splitType="Stretch">
+			<line>
+				<reportElement x="1" y="38" width="571" height="1" uuid="7d89b3d9-955b-46c6-b8ce-c13368cefff1"/>
+				<graphicElement>
+					<pen lineWidth="6.0" lineStyle="Double" lineColor="#000099"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="2" width="571" height="1" uuid="21c7d442-2430-422f-8166-fdcca1e41f2c"/>
+				<graphicElement>
+					<pen lineWidth="6.0" lineStyle="Double" lineColor="#000099"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="160" y="2" width="245" height="35" uuid="7844a097-0372-4d28-97b6-55405fcc8423"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="24"/>
+				</textElement>
+				<text><![CDATA[Reporte Empresa]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="0" width="100" height="23" uuid="f15da99a-e8a0-4e3d-9b01-1ef9e8df61c3"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[CodigoEmpresa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="134" y="0" width="100" height="23" uuid="9e3b1798-2682-4a25-aa18-0c20c87c18ab"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Nombre Empresa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="266" y="0" width="131" height="20" uuid="94b47677-fe02-4c8b-85ad-d76018ac07c7"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Dirección]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="438" y="0" width="100" height="20" uuid="cbb6ec5d-0594-4e90-bd2d-1532660baf10"/>
+				<text><![CDATA[telefono]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="42" splitType="Stretch">
+			<textField>
+				<reportElement x="1" y="0" width="100" height="20" uuid="3a242d6f-ce32-4cd8-b039-4d05a6f845ab"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{codigoEmpresas}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="21" width="571" height="1" uuid="86e9d981-c442-4a60-9204-6365251d96a0"/>
+				<graphicElement>
+					<pen lineWidth="1.5" lineStyle="Dashed" lineColor="#000099"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="134" y="1" width="100" height="20" uuid="aaf076f0-c5ef-4a59-afb4-d46742dabbea"/>
+				<textFieldExpression><![CDATA[$F{nombreEmpresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="266" y="0" width="131" height="20" uuid="57914497-c37d-4dbc-9244-09d974b0bda5"/>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="438" y="2" width="100" height="20" uuid="a022f959-199f-48c8-a25d-41279d8980f6"/>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<image scaleImage="FillFrame">
+				<reportElement stretchType="RelativeToBandHeight" x="0" y="0" width="570" height="54" uuid="362f78b0-21f2-4d27-af45-5578741a6248"/>
+				<imageExpression><![CDATA["C:\\Users\\Jeffr\\Documents\\NetBeansProjects\\TonysKinal2016037\\src\\org\\jeffreymejia\\image\\fondo.png"]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

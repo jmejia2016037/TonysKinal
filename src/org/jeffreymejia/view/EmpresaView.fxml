@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="776.0" prefWidth="1005.0" style="-fx-background-color: #3E5F8A;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jeffreymejia.controller.EmpresaController">
+   <children>
+      <Label alignment="CENTER" layoutX="37.0" layoutY="108.0" prefHeight="21.0" prefWidth="134.0" style="-fx-background-color: #3E5F8A; -fx-background-color: ;" text="codigo Empresa" textFill="WHITE" />
+      <TextField fx:id="txtCodigoEmpresa" layoutX="188.0" layoutY="93.0" style="-fx-alignment: bluee; -fx-background-color: ; -fx-background-color: ;">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect></TextField>
+      <TextField fx:id="txtNombreEmpresa" layoutX="188.0" layoutY="150.0" prefHeight="31.0" prefWidth="401.0">
+         <effect>
+            <Reflection />
+         </effect></TextField>
+      <Label alignment="CENTER" layoutX="37.0" layoutY="155.0" prefHeight="21.0" prefWidth="134.0" style="-fx-background-color: #3E5F8A;" text="Nombre Empresa" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="38.0" layoutY="201.0" prefHeight="21.0" prefWidth="134.0" style="-fx-background-color: #3E5F8A;" text="direccion Empresa" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="37.0" layoutY="251.0" prefHeight="21.0" prefWidth="134.0" style="-fx-background-color: #3E5F8A;" text="Telefono" textFill="WHITE" />
+      <TextField fx:id="txtTelefono" layoutX="188.0" layoutY="246.0">
+         <effect>
+            <Reflection />
+         </effect></TextField>
+      <TableView fx:id="tblEmpresas" layoutX="42.0" layoutY="304.0" onMouseClicked="#seleccionarElemento" prefHeight="329.0" prefWidth="922.0">
+        <columns>
+          <TableColumn fx:id="colCodigoEmpresa" prefWidth="147.0" text="Codigo Empresa" />
+          <TableColumn fx:id="colNombreEmpresa" minWidth="0.0" prefWidth="146.0" text="Nombre Empresa " />
+            <TableColumn fx:id="colDireccionEmpresa" minWidth="0.0" prefWidth="434.0" text="Direccion " />
+            <TableColumn fx:id="colTelefonoEmpresa" prefWidth="194.0" style="-: blue;" text="Telefono " />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtDireccionEmpresa" layoutX="188.0" layoutY="196.0" prefHeight="31.0" prefWidth="401.0">
+         <effect>
+            <Reflection />
+         </effect></TextField>
+      <AnchorPane layoutX="-5.0" layoutY="-7.0" />
+      <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="916.0" layoutY="79.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: #3E5F8A;">
+         <image>
+            <Image url="@../image/LogoKinal.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutY="-6.0" prefHeight="72.0" prefWidth="1005.0" style="-fx-background-color: yellow;" text="DATOS EMPRESAS" textFill="#22129a">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="921.0" layoutY="152.0" onMouseClicked="#ventanaPresupuesto" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/moneda.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="643.0" prefHeight="133.0" prefWidth="1005.0" style="-fx-background-color: yellow;">
+         <children>
+            <Button fx:id="btnReporte" layoutX="513.0" layoutY="33.0" mnemonicParsing="false" onAction="#generarRepoter" prefHeight="78.0" prefWidth="134.0" style="-fx-background-color: #3E5F8A;" text="Reporte" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnNuevo" layoutX="73.0" layoutY="39.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="78.0" prefWidth="127.0" style="-fx-background-color: #3E5F8A;" text="Nuevo " textFill="#fcfcfc">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEliminar" layoutX="296.0" layoutY="33.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="78.0" prefWidth="127.0" style="-fx-background-color: #3E5F8A;" text="Eliminar" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEditar" layoutX="716.0" layoutY="30.0" mnemonicParsing="false" onAction="#editar" prefHeight="78.0" prefWidth="127.0" style="-fx-background-color: #3E5F8A;" text="Editar " textFill="#eeeeee">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="48.0" fitWidth="58.0" layoutX="916.0" layoutY="222.0" onMouseClicked="#ventanaServicios" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/servicios.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
